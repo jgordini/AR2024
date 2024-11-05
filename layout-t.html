@@ -99,3 +99,118 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Layout</title>
+    <link rel="stylesheet" href="layout-new.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="main-container">
+            <div class="right-image">&nbsp;</div>
+            <div class="left-content">
+                <h2 class="content-heading">Content Heading</h2>
+                <p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius nunc mollis, laoreet orci id, feugiat ex. Quisque varius, sem at finibus accumsan, enim purus aliquam eros, nec cursus eros metus ut quam. Aliquam aliquam, elit vitae molestie facilisis, nisi elit sodales felis, eget facilisis mauris erat sed ante. Pellentesque pellentesque odio tortor, a aliquet lectus eleifend at. Phasellus vel vehicula dolor. Ut metus ligula, gravida in felis et, egestas vestibulum nibh. Duis sapien ipsum, pulvinar scelerisque dictum in, placerat eget nulla. Vestibulum ut dapibus ante, ut aliquam augue.</p>
+            </div>
+        </div>
+    </div>
+    <div class="ap-gradient-section">
+        <div class="ap-container">
+            <h2 class="ap-heading">Content Heading</h2>
+            <div class="ap-divider">&nbsp;</div>
+            <p class="ap-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+            <div class="ap-links-container"><a href="#" class="ap-link"> Lorem ipsum </a> <a href="#" class="ap-link"> Lorem ipsum </a></div>
+        </div>
+    </div>
+</body>
+</html>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.right-image {
+    flex: 1;
+    background-color: #e0e0e0;
+    min-height: 500px;
+}
+
+.left-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.content-heading {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content-paragraph {
+    color: #666;
+    line-height: 1.6;
+}
+
+.ap-gradient-section {
+    background: linear-gradient(135deg, #a8e063, #56ab2f);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.ap-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.ap-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ap-divider {
+    height: 4px;
+    width: 100px;
+    background-color: white;
+    margin: 1rem auto;
+}
+
+.ap-content {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.ap-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.ap-link {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.ap-link:hover {
+    background-color: rgba(255,255,255,0.2);
+}
