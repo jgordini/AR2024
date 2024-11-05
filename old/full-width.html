@@ -1,0 +1,47 @@
+ <style>
+  @media (max-width: 600px) {
+    .imp-container {
+      grid-template-columns: 1fr;
+    }
+  }
+    .imp-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+  .imp-card {
+    padding: 10px 10px 90px 10px !important;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+  }
+  .imp-card img {
+    width: 100%;
+    height: 100%; 
+  }
+  .imp-heading {
+    grid-column: 1 / -1;
+    margin: 10px;
+    color: #fff !important;
+  }
+  .imp-paragraph {
+    grid-column: 1 / -1;
+    margin: 10px;
+    color: #fff;
+  }
+  </style>
+  <div class="imp-container">
+    <h1 class="imp-heading">Big impact, one win at a time</h1>
+    <p class="imp-paragraph">An automated form; a fast pass to technology tool approval; a streamlined hiring process. Through a series of innovations and improvements, UAB IT’s partners across campus have realized savings of time and money — giving them resources to spend on strategic projects rather than paper processes. In one example, UAB IT’s applications and consulting services team created a new <a style="color:#fff !important;" href="https://www.uab.edu/it/news/item/new-form-reduces-one-card-process-times">form to reduce ONE Card processing times</a>
+. “We’ve had several users tell us how much they love it, and how easy it is to use,” said Brad Moran, ONE Card technical manager. That kind of time saving adds up — one win at a time.</p>
+    <div class="imp-card">
+    <img src="https://www.uab.edu/it/annualreport/images/2022/annual-report/performance.jpeg"/>
+    <a href="https://www.uab.edu/it/news/item/uab-it-looks-for-ways-to-avoid-contract-increases">Negotiations yield $500K in contract savings</a></div>
+    <div class="imp-card">
+    <img src="https://www.uab.edu/it/news/images/2022/Summer/10-FinancialAidLetter-100Wins22.jpg"/>
+    <a href="https://www.uab.edu/it/news/item/uab-it-shaves-time-from-financial-aid-offer-process">Financial aid offer process streamlined</a></div>
+    <div class="imp-card">
+    <img src="https://www.uab.edu/it/annualreport/images/2022/annual-report/cheha.jpg"/>
+    <a href="https://www.uab.edu/it/news/item/new-self-service-portal-for-cheaha-expands-access">Cheaha self-service portal simplifies access</a></div>
+  </div>

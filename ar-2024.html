@@ -1,0 +1,149 @@
+<style>
+	.flex-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.main-container {
+		position: relative;
+		background-color: #228b22;
+		color: white;
+		padding: 2rem;
+		max-width: 100%;
+		width: 100%;
+		flex-direction: column;
+		display: flex;
+	}
+
+	.right-image {
+		width: 100%;
+		height: 12rem;
+		background-color: #d1d5db;
+		order: 1;
+	}
+
+	.left-content {
+		width: 100%;
+		order: 2;
+	}
+
+	.content-heading {
+		color: white;
+	}
+
+	.content-paragraph {
+		line-height: 1.6;
+	}
+
+	.ap-gradient-section {
+		width: 100%;
+		height: 200px;
+		background: linear-gradient(to bottom, #a3e635, #14532d);
+		padding: 4rem 0;
+	}
+
+	.ap-container {
+		max-width: 56rem;
+		margin: 0 auto;
+		background-color: white;
+		border-radius: 0.5rem;
+		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+		padding: 3rem;
+	}
+
+	.ap-heading {
+		font-size: 1.875rem;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.ap-divider {
+		position: relative;
+		margin-bottom: 1.5rem;
+	}
+
+	.ap-divider::after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 4rem;
+		height: 0.25rem;
+		background-color: #15803d;
+		margin-bottom: 1.5rem;
+	}
+
+	.ap-content {
+		color: #4b5563;
+		text-align: center;
+		max-width: 42rem;
+		margin: 2rem auto;
+	}
+
+	.ap-links-container {
+		display: flex;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+
+	.ap-link {
+		color: #15803d;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+	}
+
+	.ap-link:hover {
+		color: #14532d;
+	}
+
+	.ap-link svg {
+		width: 1rem;
+		height: 1rem;
+		margin-left: 0.25rem;
+	}
+
+	@media (min-width: 768px) {
+		.main-container {
+			flex-direction: row;
+		}
+
+		.right-image {
+			width: 33.333%;
+			height: auto;
+			position: absolute;
+			top: -2.5rem;
+			bottom: -2.5rem;
+			right: 0;
+			order: 2;
+		}
+
+		.left-content {
+			width: 66.667%;
+			order: 1;
+		}
+	}
+</style>
+<!--Banner-->
+<!--Section 1-->
+	<div class="flex-container">
+		<div class="main-container">
+			<div class="right-image">&nbsp;</div>
+			<div class="left-content">
+				<h2 class="content-heading">Content Heading</h2>
+				<p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius nunc mollis, laoreet orci id, feugiat ex. Quisque varius, sem at finibus accumsan, enim purus aliquam eros, nec cursus eros metus ut quam. Aliquam aliquam, elit vitae molestie facilisis, nisi elit sodales felis, eget facilisis mauris erat sed ante. Pellentesque pellentesque odio tortor, a aliquet lectus eleifend at. Phasellus vel vehicula dolor. Ut metus ligula, gravida in felis et, egestas vestibulum nibh. Duis sapien ipsum, pulvinar scelerisque dictum in, placerat eget nulla. Vestibulum ut dapibus ante, ut aliquam augue.</p>
+			</div>
+		</div>
+	</div>
+	<div class="ap-gradient-section">
+		<div class="ap-container">
+			<h2 class="ap-heading">Content Heading</h2>
+			<div class="ap-divider">&nbsp;</div>
+			<p class="ap-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+			<div class="ap-links-container"><a href="#" class="ap-link"> Lorem ipsum </a> <a href="#" class="ap-link"> Lorem ipsum </a></div>
+		</div>
+	</div>
+	
+</div>

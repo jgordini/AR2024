@@ -1,0 +1,128 @@
+body {
+     font-family: Arial, sans-serif;
+ }
+
+ .container {
+     min-height: 100vh;
+ }
+
+ /* Hero Section */
+ .hero-section {
+     background-color: #047857; /* emerald-700 */
+     padding: 4rem 2rem;
+     position: relative;
+ }
+
+ .hero-section .content {
+     max-width: 1280px;
+     margin: 0 auto;
+ }
+
+ .hero-section h2 {
+     color: white;
+     font-size: 1.875rem;
+     font-weight: 600;
+     margin-bottom: 1.5rem;
+ }
+
+ .hero-section p {
+     color: rgba(255, 255, 255, 0.9);
+     max-width: 42rem;
+ }
+
+ .hero-overlay {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 33.333%;
+     height: 100%;
+     background-color: #e5e7eb; /* gray-200 */
+ }
+
+ /* Three Column Section */
+ .columns-section {
+     padding: 4rem 2rem;
+ }
+
+ .columns-container {
+     max-width: 1280px;
+     margin: 0 auto;
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 2rem;
+ }
+
+ @media (min-width: 768px) {
+     .columns-container {
+         grid-template-columns: repeat(3, 1fr);
+     }
+ }
+
+ .column {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+ }
+
+ .column h3 {
+     font-size: 1.25rem;
+     font-weight: 600;
+ }
+
+ .column-divider {
+     height: 0.25rem;
+     width: 3rem;
+     background-color: #047857; /* emerald-700 */
+ }
+
+ .column p {
+     color: #4b5563; /* gray-600 */
+ }
+
+ .column-link {
+     color: #047857; /* emerald-700 */
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+     text-decoration: none;
+ }
+
+ .column-link:hover {
+     text-decoration: underline;
+ }
+
+ .column-link svg {
+     width: 1rem;
+     height: 1rem;
+ }
+
+ /* Bottom Section */
+ .bottom-section {
+     background-color: #a3e635; /* lime-400 */
+     padding: 4rem 2rem;
+ }
+
+ .bottom-content {
+     max-width: 48rem;
+     margin: 0 auto;
+     background-color: white;
+     padding: 2rem;
+     text-align: center;
+ }
+
+ .bottom-content h2 {
+     font-size: 1.5rem;
+     font-weight: 600;
+     margin-bottom: 1.5rem;
+ }
+
+ .bottom-content p {
+     color: #4b5563; /* gray-600 */
+     margin-bottom: 2rem;
+ }
+
+ .bottom-links {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+ }
